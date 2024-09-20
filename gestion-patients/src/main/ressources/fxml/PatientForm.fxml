@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PatientController">
+    <children>
+        <Label text="Nom:" />
+        <TextField fx:id="nomField" layoutX="100" layoutY="20" />
+
+        <Label text="Prénom:" layoutY="60" />
+        <TextField fx:id="prenomField" layoutX="100" layoutY="60" />
+
+        <Label text="Date de Naissance:" layoutY="100" />
+        <TextField fx:id="dateNaissanceField" layoutX="150" layoutY="100" />
+
+        <Label text="Adresse:" layoutY="140" />
+        <TextField fx:id="adresseField" layoutX="100" layoutY="140" />
+
+        <Label text="Contact:" layoutY="180" />
+        <TextField fx:id="contactField" layoutX="100" layoutY="180" />
+
+        <Label text="Date d'Admission:" layoutY="220" />
+        <TextField fx:id="dateAdmissionField" layoutX="150" layoutY="220" />
+
+        <Label text="ID Médecin:" layoutY="260" />
+        <TextField fx:id="idMedecinField" layoutX="150" layoutY="260" />
+
+        <Label text="Chambre:" layoutY="300" />
+        <TextField fx:id="chambreField" layoutX="150" layoutY="300" />
+
+        <Button fx:id="submitButton" text="Ajouter Patient" layoutX="100" layoutY="340" onAction="#ajouterPatient" />
+    </children>
+</AnchorPane>
